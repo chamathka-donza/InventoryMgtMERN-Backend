@@ -1,0 +1,28 @@
+### Get all products
+GET http://localhost:5001/api/products/low-stock
+
+### Create new product
+POST http://localhost:5001/api/products
+Content-Type: application/json
+
+{
+    "brand_code": "000002",
+    "model_no": "54k",
+    "manuf_country": "Japan",
+    "size": "Std",
+    "loc_code": "000001", 
+    "proc_description": "Piston Set with Coat",
+    "teeth_qty": 0,
+    "engine_model": "54K",
+    "buy_price": "AMX",
+    "sell_price": "ASC",
+    "is_rack": true,
+    "vendor_code": "000001",
+    "qty":20
+}
+
+### Get product by id
+GET http://localhost:5001/api/products/67db1d7f6bdb31f77df5834f
+
+### Delete product by id
+DELETE http://localhost:5001/api/products/67db1d7f6bdb31f77df5834f
