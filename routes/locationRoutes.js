@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 
-const { getLocations, getLocationById, createLocation, updateLocation, deleteLocation } = require('../controllers/LocationController');
+const { getLocations, getLocationById, createLocation, updateLocation, deleteLocation } = require('../controllers/locationController');
 
 router.get('/', getLocations);
 router.get('/:id', getLocationById);
